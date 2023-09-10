@@ -1,0 +1,6 @@
+# https://prettier.io/docs/en/options.html
+
+endOfLine: "lf" # .editorconfig -> end_of_line = lf
+tabWidth: 2 # .editorconfig -> indent_size = 2 or tab_width = 2
+useTabs: false # .editorconfig -> indent_style = space
+printWidth: 120 # .editorconfig -> max_line_length = 120
