@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack:dev": "webpack"
+    "webpack:dev": "webpack",
+    "stylelint:run": "stylelint '**/*{.css,.scss}'",
+    "stylelint:fix": "stylelint '**/*{.css,.scss}' --fix"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +24,11 @@
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.0.3",
     "style-loader": "^3.3.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-idiomatic-order": "^9.0.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-prettier": "^4.0.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   }

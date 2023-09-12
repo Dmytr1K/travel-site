@@ -1,0 +1,7 @@
+plugins:
+  - stylelint-order
+
+extends:
+  - stylelint-config-idiomatic-order
+  - stylelint-config-standard
+  - stylelint-prettier/recommended
