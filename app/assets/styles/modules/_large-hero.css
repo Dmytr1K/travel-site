@@ -1,13 +1,36 @@
-/* stylelint-disable selector-class-pattern */
 .large-hero {
   position: relative;
-}
 
-.large-hero__text-content {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  transform: translateY(-50%);
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    margin: 0;
+    color: #2f5572;
+    font-size: 7.8rem;
+    font-weight: 300;
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: #2f5572;
+    font-size: 4.7rem;
+    font-weight: 300;
+  }
+
+  &__description {
+    width: 46rem;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff8ee;
+    font-size: 3rem;
+    font-weight: 300;
+    text-shadow: 1px 2px 0 rgb(0 0 0 / 10%);
+  }
 }
