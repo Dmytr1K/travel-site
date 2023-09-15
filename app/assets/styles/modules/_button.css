@@ -1,0 +1,18 @@
+.btn {
+  display: inline-block;
+  padding: 1.3rem 2rem;
+  background-color: #2f5572;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  &--orange {
+    background-color: #d59541;
+  }
+
+  &--large {
+    padding: 1.6rem 3rem;
+    font-size: 2rem;
+  }
+}
