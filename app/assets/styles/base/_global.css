@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  color: #333;
+  color: $color-dark-grey;
   font-family: Roboto, sans-serif;
 }
 

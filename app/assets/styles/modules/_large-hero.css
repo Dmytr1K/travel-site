@@ -12,14 +12,14 @@
 
   &__title {
     margin: 0;
-    color: #2f5572;
+    color: $color-blue;
     font-size: 7.8rem;
     font-weight: 300;
   }
 
   &__subtitle {
     margin: 0;
-    color: #2f5572;
+    color: $color-blue;
     font-size: 4.7rem;
     font-weight: 300;
   }
@@ -28,7 +28,7 @@
     width: 46rem;
     margin-right: auto;
     margin-left: auto;
-    color: #fff8ee;
+    color: $color-very-light-orange;
     font-size: 3rem;
     font-weight: 300;
     text-shadow: 1px 2px 0 rgb(0 0 0 / 10%);
