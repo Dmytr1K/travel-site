@@ -1,3 +1,5 @@
+/* stylelint-disable at-rule-no-unknown */
+
 .large-hero {
   position: relative;
 
@@ -13,24 +15,63 @@
   &__title {
     margin: 0;
     color: $color-blue;
-    font-size: 7.8rem;
+    font-size: 3rem;
     font-weight: 300;
+
+    @mixin atSmall {
+      font-size: 4.6rem; /* multiplier 1.5(3) */
+    }
+
+    @mixin atMedium {
+      font-size: 6.2rem; /* multiplier 2.0(6) */
+    }
+
+    @mixin atLarge {
+      font-size: 7.8rem; /* multiplier 2.6 */
+    }
   }
 
   &__subtitle {
     margin: 0;
     color: $color-blue;
-    font-size: 4.7rem;
+    font-size: 1.8rem;
     font-weight: 300;
+
+    @mixin atSmall {
+      font-size: 2.76rem;
+    }
+
+    @mixin atMedium {
+      font-size: 3.72rem;
+    }
+
+    @mixin atLarge {
+      font-size: 4.7rem;
+    }
   }
 
   &__description {
-    width: 46rem;
+    width: 18rem;
     margin-right: auto;
     margin-left: auto;
     color: $color-very-light-orange;
-    font-size: 3rem;
+    font-size: 1.15rem;
     font-weight: 300;
     text-shadow: 1px 2px 0 rgb(0 0 0 / 10%);
+
+    @mixin atSmall {
+      width: 28rem;
+      font-size: 1.76rem;
+    }
+
+    @mixin atMedium {
+      width: 37rem;
+      font-size: 2.38rem;
+    }
+
+    @mixin atLarge {
+      width: 46rem;
+      font-size: 3rem;
+    }
   }
 }
