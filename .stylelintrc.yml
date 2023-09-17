@@ -5,3 +5,8 @@ extends:
   - stylelint-config-idiomatic-order
   - stylelint-config-standard
   - stylelint-prettier/recommended
+
+rules:
+  comment-empty-line-before: never
+  import-notation: string
+  media-feature-range-notation: prefix
