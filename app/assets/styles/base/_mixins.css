@@ -1,5 +1,3 @@
-/* stylelint-disable at-rule-no-unknown */
-
 @define-mixin atSmall {
   @media (min-width: 530px) {
     @mixin-content;

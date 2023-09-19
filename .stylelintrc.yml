@@ -1,5 +1,6 @@
 plugins:
   - stylelint-order
+  - stylelint-scss
 
 extends:
   - stylelint-config-idiomatic-order
@@ -7,6 +8,11 @@ extends:
   - stylelint-prettier/recommended
 
 rules:
+  at-rule-no-unknown: null
+  scss/at-rule-no-unknown:
+    - true
+    - ignoreAtRules:
+        - "/^define-/i"
   comment-empty-line-before: never
   import-notation: string
   media-feature-range-notation: prefix
