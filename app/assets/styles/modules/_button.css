@@ -1,18 +1,40 @@
+/* stylelint-disable at-rule-no-unknown */
+
 .button {
   display: inline-block;
-  padding: 1.3rem 2rem;
+  padding: 0.7rem 1rem;
   background-color: $color-blue;
   color: $color-white;
-  font-size: 1.6rem;
+  font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
+
+  @mixin atSmall {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  @mixin atMedium {
+    padding: 1.3rem 2rem;
+    font-size: 1.6rem;
+  }
 
   &--orange {
     background-color: $color-orange;
   }
 
   &--large {
-    padding: 1.6rem 3rem;
-    font-size: 2rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+
+    @mixin atSmall {
+      padding: 1.2rem 2.3rem;
+      font-size: 1.5rem;
+    }
+
+    @mixin atMedium {
+      padding: 1.6rem 3rem;
+      font-size: 2rem;
+    }
   }
 }
