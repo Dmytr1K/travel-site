@@ -1,0 +1,11 @@
+.page-section {
+  padding: 2.5rem 0;
+
+  @mixin atSmall {
+    padding: 5rem 0;
+  }
+
+  @mixin atMedium {
+    padding: 10rem 0;
+  }
+}
