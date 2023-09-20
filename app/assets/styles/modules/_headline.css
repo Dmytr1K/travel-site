@@ -1,0 +1,35 @@
+.headline {
+  color: $color-blue;
+  font-size: 4.6rem;
+  font-weight: 300;
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--orange {
+    color: $color-orange;
+  }
+
+  &--small {
+    font-size: 3rem;
+  }
+
+  &--narrow {
+    max-width: 45rem;
+
+    @mixin horizontal-centering;
+  }
+
+  &--light {
+    font-weight: 100;
+  }
+
+  &--b-margin-small {
+    margin-bottom: 0.8em;
+  }
+
+  &--b-margin-large {
+    margin-bottom: 2.5em;
+  }
+}

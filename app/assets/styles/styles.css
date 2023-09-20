@@ -2,7 +2,8 @@
 @import "base/_variables";
 @import "base/_global";
 @import "base/_mixins";
-@import "modules/_large-hero";
 @import "modules/_button";
+@import "modules/_headline";
+@import "modules/_large-hero";
 @import "modules/_page-section";
 @import "modules/_wrapper";
