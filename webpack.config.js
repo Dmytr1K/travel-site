@@ -1,14 +1,6 @@
 /* eslint-disable global-require */
 const path = require("path");
 
-const postCSSPlugins = [
-  require("postcss-import"),
-  require("postcss-mixins"),
-  require("postcss-simple-vars"),
-  require("postcss-nested"),
-  require("autoprefixer"),
-];
-
 module.exports = {
   entry: "./app/assets/scripts/App.js",
   output: {
@@ -30,9 +22,9 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [
-          "style-loader",
+          { loader: "style-loader" },
           { loader: "css-loader", options: { url: false } },
-          { loader: "postcss-loader", options: { postcssOptions: { plugins: postCSSPlugins } } },
+          { loader: "postcss-loader" },
         ],
       },
     ],
