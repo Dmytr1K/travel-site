@@ -1,5 +1,0 @@
-@define-mixin at-medium {
-  @media (min-width: 800px) {
-    @mixin-content;
-  }
-}
