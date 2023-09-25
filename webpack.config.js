@@ -1,5 +1,8 @@
 /* eslint-disable global-require */
+/* eslint-disable import/no-extraneous-dependencies */
+
 const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./app/assets/scripts/App.js",
@@ -22,11 +25,16 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [
-          { loader: "style-loader" },
+          { loader: MiniCssExtractPlugin.loader },
           { loader: "css-loader", options: { url: false } },
           { loader: "postcss-loader" },
         ],
       },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "bundled.css",
+    }),
+  ],
 };
