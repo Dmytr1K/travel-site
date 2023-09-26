@@ -2,6 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 const path = require("path");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -30,6 +31,23 @@ module.exports = {
           { loader: "postcss-loader" },
         ],
       },
+    ],
+  },
+  optimization: {
+    minimize: false,
+    minimizer: [
+      new CssMinimizerPlugin({
+        minimizerOptions: {
+          preset: [
+            // "lite",
+            "default",
+            // "advanced",
+            {
+              discardComments: { removeAll: true },
+            },
+          ],
+        },
+      }),
     ],
   },
   plugins: [
