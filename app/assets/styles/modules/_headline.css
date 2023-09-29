@@ -1,7 +1,10 @@
 .headline {
   color: $color-blue;
-  font-size: 4.6rem;
   font-weight: 300;
+
+  @mixin adapt {
+    font-size: 4.6rem;
+  }
 
   &--centered {
     text-align: center;
@@ -12,11 +15,13 @@
   }
 
   &--small {
-    font-size: 3rem;
+    @mixin adapt {
+      font-size: 3rem;
+    }
   }
 
   &--narrow {
-    max-width: 45rem;
+    max-width: 15em;
 
     @mixin horizontal-centering;
   }
