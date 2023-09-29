@@ -6,7 +6,11 @@
   @mixin horizontal-centering;
 
   &--medium {
-    padding: 0;
     text-align: center;
+  }
+
+  .wrapper {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
