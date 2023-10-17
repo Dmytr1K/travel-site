@@ -29,6 +29,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.29",
+    "postcss-calc": "^9.0.1",
     "postcss-import": "^15.1.0",
     "postcss-loader": "^7.3.3",
     "postcss-mixins": "^9.0.4",

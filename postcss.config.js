@@ -10,6 +10,7 @@ module.exports = {
     }),
     require("postcss-simple-vars"),
     require("postcss-nested"),
+    require("postcss-calc"),
     require("autoprefixer"),
   ],
 };
