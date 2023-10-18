@@ -5,7 +5,7 @@
 
   @mixin horizontal-centering;
 
-  &--medium {
+  &--centered {
     text-align: center;
   }
 
