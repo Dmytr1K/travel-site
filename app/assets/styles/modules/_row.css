@@ -1,0 +1,26 @@
+$gutter-horizontal: 0;
+$width-1-of-3: calc((100% - calc(2 * $gutter-horizontal)) / 3);
+
+.row {
+  @mixin clearfix;
+
+  &__col {
+    @mixin at-small {
+      & {
+        float: left;
+
+        &:not(:last-child) {
+          margin-right: $gutter-horizontal;
+        }
+
+        &--1-of-3 {
+          width: $width-1-of-3;
+        }
+
+        &--2-of-3 {
+          width: calc(2 * $width-1-of-3 + $gutter-horizontal);
+        }
+      }
+    }
+  }
+}

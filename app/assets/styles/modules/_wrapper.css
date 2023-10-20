@@ -5,6 +5,11 @@
 
   @mixin horizontal-centering;
 
+  @mixin at-extra-large {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   &--centered {
     text-align: center;
   }
