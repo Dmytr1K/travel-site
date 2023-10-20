@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+
   /* This defines what 1rem is: 1rem = 10px = (16px * 0.625) */
   font-size: 62.5%;
 }
