@@ -5,6 +5,10 @@ $width-1-of-3: calc((100% - calc(2 * $gutter-horizontal)) / 3);
   @mixin clearfix;
 
   &__col {
+    &:has(img) {
+      text-align: center;
+    }
+
     @mixin at-small {
       & {
         float: left;
@@ -19,6 +23,12 @@ $width-1-of-3: calc((100% - calc(2 * $gutter-horizontal)) / 3);
 
         &--2-of-3 {
           width: calc(2 * $width-1-of-3 + $gutter-horizontal);
+        }
+
+        &:not(:first-child) {
+          @mixin adapt {
+            padding-left: 6.5rem;
+          }
         }
       }
     }

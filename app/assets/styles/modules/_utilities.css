@@ -1,9 +1,0 @@
-.u-center-inline-content {
-  text-align: center;
-}
-
-.u-pading-left-large {
-  @mixin adapt {
-    padding-left: 6.5rem;
-  }
-}
